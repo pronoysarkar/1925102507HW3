@@ -1,0 +1,259 @@
+/*Lab Home Work 3*/
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #000000;
+}
+.header-zone {
+	height: 100px;
+	overflow: hidden;
+}
+.header-zone img {
+	width: 100%;
+	height: 100%;
+}
+
+.main-menu {
+	text-align: center;
+	background-color: #282e54;
+}
+.main-menu nav{
+
+}
+.main-menu nav ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.main-menu nav ul li{
+	display: inline-block;
+}
+
+.main-menu nav ul li a {
+	text-decoration: none;
+	font-size: 25px;
+	padding: 20px 30px;
+	display: block;
+	margin-right: 21px;
+	color: #ffffff;
+	transition: 0.6s;
+}
+.main-menu nav ul li a:hover{
+	color: #0055ff;
+	background-color: #9ab29f;
+}
+/*End main manu*/
+
+/*Submenu CSS Start*/
+.main-menu nav ul li ul.sub-menu {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+	width: 250px;
+	background-color: #8CCFFA;
+	text-align: left;
+}
+.main-menu nav ul li:hover > ul.sub-menu {
+	opacity: 1;
+	visibility: visible;
+}
+.main-menu nav ul li ul.sub-menu li {
+	display: inline;
+}
+.main-menu nav ul li ul.sub-menu li a {
+	color: #000000;
+	display: block;
+	margin-right: 0;
+	transition: 0.6s;
+}
+.main-menu nav ul li ul.sub-menu li a:hover{
+	color: #0055ff;
+	background-color: #9ab29f;
+}
+/*End Sub Menu CSS*/
+
+/*Start Sub Sub Menu CSS*/
+
+.main-menu nav ul li ul.sub-menu .sub-menu {
+	position: absolute;
+	left: 250px;
+	top: 14px;
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.main-menu nav ul li ul.sub-menu li:hover .sub-menu {
+	opacity: 1;
+	visibility: visible;
+}
+/*End Sub Sub menu CSS*/
+
+.page-title{
+	width: 1170px;
+	margin: 0 auto;
+}
+.page-title h2 {
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	display: block;
+}
+
+.about-page-info h3 {
+	color: #ffff;
+}
+
+.about-page-info p {
+	color: #ffff;
+}
+
+/*CONTACT PAGE CSS*/
+
+.pagewidth {
+	width: 900px;
+	margin: 0 120px;
+}
+[type=text],
+[type=email],
+[type=url],
+select,
+textarea {
+  display: block;
+  padding: .5rem;
+  background: transparent;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #cdcdcd;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: .95rem;
+}
+
+[type=text]:focus,
+[type=email]:focus,
+[type=url]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #1E6BD6;
+} 
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) 100% no-repeat;
+  line-height: 1
+}
+
+label {
+  font-weight: 600;
+  font-size: .9rem;
+  display: block;
+  margin: .5rem 0;
+}
+label p {
+	color: white;
+}
+
+/* Other-for border-box css */
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  padding: 1rem;
+}
+/*End  Other-for border-box css */
+
+.contact-form-cv p{
+	color:#ffffff;
+}
+
+/* For Submit Button */
+[type=submit] {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  margin: .25rem 0;
+  padding: .5rem 1rem;
+  border: 1px solid #1E6BD6;
+  border-radius: 18px;
+  background: #1E6BD6;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: .95rem;
+}
+
+.main-content {
+	width: 100%;
+	clear: both;
+	padding-top: 3px;
+}
+.main-content div {
+	float: left;
+}
+.main-content .lsb{
+	width: 20%;
+	text-align: center;
+}
+.main-content .content{
+	width: 60%;
+}
+.main-content .right-siderbar{
+	width: 20%;
+	text-align: center;
+}
+.lsb {
+	background-color: #008074;
+	height: 828px;
+}
+.right-siderbar {
+	background-color: pink;
+	height: 828px;
+}
+.content-image {
+	text-align: center;
+}
+.content-image img {
+	width: 49.5%;
+	height: 412px;
+}
+
+
+.footer-zone {
+	background-color: #ccc;
+	height: 145px;
+	width: 100%;
+	clear: both;
+}
+.footer-zone .footer-content {
+	width: 50%;
+	float: left;
+}
+.footer-content.flsb {
+	width: calc(50% - 3px);
+}
+.flsb{
+	border-right: 3px solid #000;
+}
+.footer-img {
+	text-align: center;
+}
+.footer-img img {
+	width: 110px;
+	border-radius: 50%;
+	margin: 10px 20px 10px 20px;
+	padding: 10px 3px;
+}
+.copyright p {
+	text-align: center;
+	line-height: 115px;
+}
